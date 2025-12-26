@@ -10,6 +10,7 @@ import PlacedOrder from "../PlacedOrder/PlacedOrder";
 import Footer from "../Footer/Footer";
 import AuthModal from "../AuthModal/AuthModal";
 import Contact from "../Contact/Contact";
+import WhyChooseUs from "../WhyChooseUs/WhyChooseUs";
 
 function Home() {
   const [searchProducts, setSearchProducts] = useState("");
@@ -58,8 +59,8 @@ function Home() {
   // adding products to cart
   const addToCart = (product) => {
     const addedBefore = cart.find((item) => item.id === product.id);
-    if (!addedBefore){
-    setCart([...cart, { ...product, quantity: 1 }]);
+    if (!addedBefore) {
+      setCart([...cart, { ...product, quantity: 1 }]);
     }
   };
 
@@ -156,6 +157,14 @@ function Home() {
     setFormData({ name: "", email: "", message: "" });
   };
 
+  // why choose us section
+  const [clickedFeature, setClickedFeature] = useState(null);
+
+  const handleFeatureClick = (featureTitle) => {
+    setClickedFeature(featureTitle);
+    console.log(`User clicked: ${featureTitle}`);
+  };
+
   return (
     <div className="relative">
       <WishList
@@ -195,7 +204,13 @@ function Home() {
         wishList={wishList}
         cart={cart}
       />
-      
+
+      <div className="w-full h-1  bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 animate-pulse"></div>
+      <WhyChooseUs
+        handleFeatureClick={handleFeatureClick}
+        clickedFeature={clickedFeature}
+      />
+
       <div className="w-full h-1  bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 animate-pulse"></div>
 
       <Contact
@@ -204,7 +219,7 @@ function Home() {
         handleSubmit={handleSubmit}
       />
 
-     <div className="w-full h-1  bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 animate-pulse"></div>
+      <div className="w-full h-1  bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 animate-pulse"></div>
 
       {orderSummary && (
         <OrderSummary
