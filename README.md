@@ -24,7 +24,7 @@ This project demonstrates modern front-end development skills with **Cart, Wishl
 ## Live Demo
 
 Check the live project deployed on Vercel:  
-
+01react-ecommerce-project-33ex4q7y6.vercel.app
 
 ## Getting Started
 
