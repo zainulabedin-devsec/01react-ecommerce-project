@@ -1,16 +1,34 @@
-# React + Vite
+# React E-commerce Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **responsive and interactive React front-end project** built with **Tailwind CSS**.  
+This project demonstrates modern front-end development skills with **Cart, Wishlist, Contact Form, Navbar, and Footer components**.  
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Works on mobile, tablet, and desktop devices.  
+- **Cart Functionality**: Add, remove, and update product quantities.  
+- **Wishlist**: Save favorite items with local storage persistence.  
+- **Contact Form**: Collect user messages (frontend simulation).  
+- **Interactive UI Components**: Buttons, sections, and hover effects for a professional look.  
+- **Navbar Shadow on Scroll**: Smooth shadow effect when scrolling.  
+- **Footer & Section Dividers**: Clean, professional layout.  
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** (Functional Components + Hooks)  
+- **Tailwind CSS** for responsive and modern UI  
+- **React Icons** for icons  
+- **Local Storage** for cart & wishlist persistence  
+- **Vercel** for deployment  
 
-## Expanding the ESLint configuration
+## Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Check the live project deployed on Vercel:  
+
+
+## Getting Started
+
+1. **Clone the repository**
+
+```bash
+ https://github.com/zainulabedin-devsec/01react-ecommerce-project.git
